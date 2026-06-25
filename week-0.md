@@ -24,8 +24,8 @@
 ### Algorithm design
 #### Start with an input, for example what you put in the say block in scratch, known as arugement, whereas the block itself is the process, the function, the coding part. And finally the output is the result that is to presented to users is known as the side effect. Whereas it could also store a variable at the output, and to pass it on for another function as it became the input of it, this result is known as return value. Which we should use a variable taken from users for input for the algorithm to act differently based on condition. Such as what to say in the say block or whether to process by another function. Which makes algorithm becomes the combination of small solutions to a biger problem. To maximise the effciency of avoiding repeatedly write and debug many same functions of an algorithm, we use loops and defining our new functions. Which defining new functions combine multiple processes together, allowing us to reuse same code quick and easily, without the need of knowing what the mechanic behind the function itself, creating a higher level of lanuage.  
 
-# Project
-## This week's project is to create a scratch game, story or such, no requirements except to use loops variable functions etc.
-### Here is the link to the sushi conveyor game I created: https://scratch.mit.edu/projects/1334736800
+## Project
+### This week's project is to create a scratch game, story or such, no requirements except to use loops variable functions etc.
+#### Here is the link to the sushi conveyor game I created: https://scratch.mit.edu/projects/1334736800
 
 
