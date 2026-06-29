@@ -13,7 +13,7 @@
 #### To gain access to many of the commands, including those comes with c like print, you need to include or import headerfile, that contain different libraries, that are codes pre written for different commands. Such as include <stdio.h>, for standard input and output libraries, like printf and get_string.
 #### To search up the function of code and the headerfile you need, you search up manual of c in internet, or to visit cs50's own website.
 
-### Common commands
+### Common commands in C
 #### To output message, use printf ("<text>"), it is recommended to add an escape sequence of \n before " to get onto next line after output. Escape sequences are sequences that not read directly in string qualifiers, but served for specific functions, or to replace characters that cannot be output directly. \r for return to start of string, \" to display " instead of declaring the start or end of string, same for \' and \\. To include a variable in output, you include a format specifier in text, which is a placeholder of which you include the variable outside the text later by a comma. Such as printf ("Hello, %s",name), which name is the string variable, %s is the placeholder that specify the format of your original variable as a string.
 #### To get a text input, use string <variable> = get_string("<text>");, which stores the string input to <variable>. This code automatically uses the printf command as well to output <text>.
 #### For conditionals follow the structure:
@@ -22,5 +22,15 @@
 #### (4 spaces for convention) command
 #### }
 
+## Linux
+### An OS that is highly perfermance for servers and clouds. Tends to be CLI, vs code uses it in terminal for navigating through different files.
 
+### Common commands in Linux
+### cd, change into directory/folder.
+### cp, copy
+### ls, list everything in current directory
+### mkdir,  create a new directory
+### mv, to move or to rename, by file then destination with /, or file then new file name
+### rm, remove file
+### rmdir, remove directory
 
