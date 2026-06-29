@@ -15,7 +15,7 @@
 
 ### Common commands in C
 #### To output message, use printf ("<text>"), it is recommended to add an escape sequence of \n before " to get onto next line after output. Escape sequences are sequences that not read directly in string qualifiers, but served for specific functions, or to replace characters that cannot be output directly. \r for return to start of string, \" to display " instead of declaring the start or end of string, same for \' and \\. To include a variable in output, you include a format specifier in text, which is a placeholder of which you include the variable outside the text later by a comma. Such as printf ("Hello, %s",name), which name is the string variable, %s is the placeholder that specify the format of your original variable as a string.
-#### To get a text input, use string <variable> = get_string("<text>");, which stores the string input to <variable>. This code automatically uses the printf command as well to output <text>.
+#### To get a text input, use string <variable> = get_string("<text>");, which stores the string input to <variable>. This code automatically uses the printf command as well to output <text>. You always need to specify the type of data when declaring it, such as int a = 1;.
 #### For conditionals follow the structure:
 #### if (condition)
 #### {
