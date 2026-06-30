@@ -1,7 +1,7 @@
 # Week 1
 ## Use a web version of vs code with all pre configured settings for the projects. Link: cs50.dev 
 ## Use cs50's own headerfile with the libraries, and their manual needed for coding projects. cs50.h and manual.cs50.io.
-## Use cs50's design50 and style50 in its vs code studio for the projects.
+## Use cs50's check50, design50 and style50 in its vs code studio for the projects.
 ## Machine codes is the only codes that computer understand, which is binary of 0s and 1s, and source code is what human writes, like C and python. That require translation by a compiler, such as VS code. There are two place user communicate with the compiler, GUI and CLI (Command line interface), which first is to interract with graphics, is to type in interface/terminal.
 
 ## Correctness vs Design vs Style
@@ -21,7 +21,9 @@
 
 ### Common commands in C
 #### To declare a variable, use <data type> <variable name> = <value>
-#### To output message, use printf ("<text>"), it is recommended to add an escape sequence of \n before " to get onto next line after output. Escape sequences are sequences that not read directly in string qualifiers, but served for specific functions, or to replace characters that cannot be output directly. \r for return to start of string, \" to display " instead of declaring the start or end of string, same for \' and \\. To include a variable in output, you include a format specifier in text, which is a placeholder of which you include the variable outside the text later by a comma. Such as printf ("Hello, %s",name), which name is the string variable, %s is the placeholder that specify the format of your original variable as a string.
+#### To reject any later change of value of a variable add const before the declaration. 
+#### To output message, use printf ("<text>"), it is recommended to add an escape sequence of \n before " to get onto next line after output. 
+#### Escape sequences are sequences that not read directly in string qualifiers, but served for specific functions, or to replace characters that cannot be output directly. \r for return to start of string, \" to display " instead of declaring the start or end of string, same for \' and \\. To include a variable in output, you include a format specifier in text, which is a placeholder of which you include the variable outside the text later by a comma. Such as printf ("Hello, %s",name), which name is the string variable, %s is the placeholder that specify the format of your original variable as a string.
 #### To get a text input, use string <variable> = get_string("<text>");, which stores the string input to <variable>. This code automatically uses the printf command as well to output <text>. You always need to specify the type of data when declaring it, such as int a = 1;.
 #### When you declare a varaibale though an input, and the user input format doesn't match the specifyed format, it will loop again, such as char a = get_char(type: );, and user typed multiple characters. It will show the message and ask for input again.
 #### For conditionals follow the structure:
@@ -31,7 +33,7 @@
 #### }
 #### While loops follow the same structure as well, for loops also but in the conditions you do (declare the starting point of the variable; ending condition; value increase after each loop), both loops you can use the command continue and break to bring back to start of loop or escape it in cases like while (true)
 #### You can also use the do command to perform lines of codes once first, then to check conditions to see if repeat. It follows the same structure as well, except the while conditions part are mentioned at the end after }.
-#### For functions that takes no input and generate no output, but with side effect, use void <function_name>(void), then next line {<commands>}, functions needs to be declared at first before using them, with except using a prototype, by doing the same without {} and end with ;. Then you can place your functions the place after it been used without triggering error.
+#### For functions that takes no input and generate no output, but with side effect, use void <function_name>(void), then next line {<commands>}, if you want to take in or output a value, change void to data type. Functions needs to be declared at first before using them, with except using a prototype, by doing the same without {} and end with ;. Then you can place your functions the place after it been used without triggering error.
 #### None of the variables declared inside can pass out of the loop, and none of the variable declared outside can pass in of the functions unless specify as one of arugment, known as scope.
 
 ## Linux
