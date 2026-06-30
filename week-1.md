@@ -1,7 +1,13 @@
 # Week 1
 ## Use a web version of vs code with all pre configured settings for the projects. Link: cs50.dev 
 ## Use cs50's own headerfile with the libraries, and their manual needed for coding projects. cs50.h and manual.cs50.io.
+## Use cs50's design50 and style50 in its vs code studio for the projects.
 ## Machine codes is the only codes that computer understand, which is binary of 0s and 1s, and source code is what human writes, like C and python. That require translation by a compiler, such as VS code. There are two place user communicate with the compiler, GUI and CLI (Command line interface), which first is to interract with graphics, is to type in interface/terminal.
+
+## Correctness vs Design vs Style
+### First is whether the code can solve the problem it supposed to.
+### Second is whether to do it efficiently.
+### Third is whether it is easy to read, consistant for other humans to debug.
 
 ## C
 ### Basic setup
