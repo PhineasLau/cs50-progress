@@ -24,6 +24,7 @@
 #### (4 spaces for convention) command
 #### }
 #### While loops follow the same structure as well, for loops also but in the conditions you do (declare the starting point of the variable; ending condition; value increase after each loop), both loops you can use the command continue and break to bring back to start of loop or escape it in cases like while (true)
+#### You can also use the do command to perform lines of codes once first, then to check conditions to see if repeat. It follows the same structure as well, except the while conditions part are mentioned at the end after }.
 
 ## Linux
 ### An OS that is highly perfermance for servers and clouds. Tends to be CLI, vs code uses it in terminal for navigating through different files.
