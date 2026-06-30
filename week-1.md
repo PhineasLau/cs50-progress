@@ -23,6 +23,7 @@
 #### {
 #### (4 spaces for convention) command
 #### }
+#### While loops follow the same structure as well, for loops also but in the conditions you do (declare the starting point of the variable; ending condition; value increase after each loop) 
 
 ## Linux
 ### An OS that is highly perfermance for servers and clouds. Tends to be CLI, vs code uses it in terminal for navigating through different files.
