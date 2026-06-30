@@ -18,6 +18,7 @@
 #### To end an expression in c you type ;.
 #### To gain access to many of the commands, including those comes with c like print, you need to include or import headerfile, that contain different libraries, that are codes pre written for different commands. Such as include <stdio.h>, for standard input and output libraries, like printf and get_string.
 #### To search up the function of code and the headerfile you need, you search up manual of c in internet, or to visit cs50's own website.
+#### Include all your main codes, that aren't functions in, int main(void){}.
 
 ### Common commands in C
 #### To declare a variable, use <data type> <variable name> = <value>
