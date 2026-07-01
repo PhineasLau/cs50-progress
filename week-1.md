@@ -9,7 +9,7 @@
 ### Third is whether it is easy to read, consistant for other humans to debug.
 
 ## You could overflow a variable if you assign too high value to it, as int can only have up to around 4 billion different values, so up and down to 2 billion for positive and negative, where as long can have much bigger value for integar as it uses 64 bits instead.
-
+## Truncation of a real deceimal value to integar could happen if you assign int but not float data type to a variable that could be so.
 ## Machine codes is the only codes that computer understand, which is binary of 0s and 1s, and source code is what human writes, like C and python. That require translation by a compiler, such as VS code. There are two place user communicate with the compiler, GUI and CLI (Command line interface), which first is to interract with graphics, is to type in interface/terminal.
 
 ## C
