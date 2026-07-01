@@ -53,3 +53,5 @@
 ### rm, remove file
 ### rmdir, remove directory
 
+## Questions that haven't answered yet:
+### Why we put int in front of main(void){}.
