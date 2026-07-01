@@ -36,7 +36,7 @@
 #### {
 #### (4 spaces for convention) command
 #### }
-#### While loops follow the same structure as well, for loops also but in the conditions you do (declare the starting point of the variable; ending condition; value increase after each loop), both loops you can use the command continue and break to bring back to start of loop or escape it in cases like while (true)
+#### While loops follow the same structure as well, for loops also but in the conditions you do (declare the starting point of the variable; ending condition; value increase after each loop), both loops you can use the command continue and break to bring back to start of loop or escape it in cases like while (true). Remember, the condition part is that the loop only runs if inside is true.
 #### You can also use the do command to perform lines of codes once first, then to check conditions to see if repeat. It follows the same structure as well, except the while conditions part are mentioned at the end after }.
 #### For functions that takes no input and generate no output, but with side effect, use void (function_name)(void), then next line {(commands)}, if you want to take in or output a value, change both void to a data type, but add variable name after the second void. Functions needs to be declared at first before using them, with except using a prototype, by doing the same without {} and end with ;. Then you can place your functions the place after it been used without triggering error.
 #### None of the variables declared inside can pass out of the loop, and none of the variable declared outside can pass in of the functions unless specify as one of arugment, known as scope.
