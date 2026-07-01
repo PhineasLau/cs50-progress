@@ -54,4 +54,5 @@
 ### rmdir, remove directory
 
 ## Questions that haven't answered yet:
-### Why we put int in front of main(void){}.
+### Why we put int in front of main(void){}?
+### Can we alter the reaction of if user typed string in get_int, of not just reask but custom reply?
