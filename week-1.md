@@ -18,7 +18,7 @@
 #### To clear the stuffs in terminal, type in terminal, clear, though this doesn't affect functionally.
 #### To start a new file, type in terminal, code "<programname>.c", it is recommended to use lowercase and no space for the name.
 #### To compile, translate the source code to runable machine code you type the following in terminal, make "<programname>", with no need of typing in the format .c. No output should been seen if done correctly. You need to recompile the program everytime after you made a change in order for a change in output.
-#### To run the code you use, ./<"programname">", ./ stands for go into the current folder to find and run the following program, as the make command already creates and stores the program in folder.
+#### To run the code you use, ./<"programname">, ./ stands for go into the current folder to find and run the following program, as the make command already creates and stores the program in folder.
 #### To end an expression in c you type ;.
 #### To gain access to many of the commands, including those comes with c like print, you need to include or import headerfile, that contain different libraries, that are codes pre written for different commands. Such as include <stdio.h>, for standard input and output libraries, like printf and get_string.
 #### To search up the function of code and the headerfile you need, you search up manual of c in internet, or to visit cs50's own website.
