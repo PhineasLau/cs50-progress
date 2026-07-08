@@ -1,5 +1,5 @@
 # Week 2
-## Use debug50 as a command tool to help debugging.
+## Use debug50 as a command tool in VS code to help debugging.
 
 ## Cryptography
 ### Encrypting data in a reversible way for secured communication.
