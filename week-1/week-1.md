@@ -53,7 +53,7 @@
 ### rm, remove file
 ### rmdir, remove directory
 
-## Reflections:
+## Reflections
 ### Why we put int in front of main(void){}?
 #### main is also a function, the return value of int indicates whether it has finished successfully. Not using boolean as different numbers that return can help indicates the problem it encounters.
 ### Can we alter the reaction of if user typed string in get_int, of not just reask but custom reply?
