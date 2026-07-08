@@ -21,3 +21,10 @@
 #### 4. Linking, take the assembled code, and link it to the assembled headerfiles codes, by combining all binary code together to a larger one. As preprocessing only includes the format and prototype, while the actual definitions are in server's hardware.
 
 ### People could reverse the process of compiling as to recompile the binary codes to source codes, this can be done by recognising the pattern of 0s and 1s by knowing the layout and the CPU they used. This reverse engineering can be a threat to know how a program was designed to achieve its purpose, but takes extremely long time and some cannot be perfectly recreated even if functionally so as codes like for and while loop are same in binary as a programming perference.
+
+## Arrays
+### Different types of data takes up different space of memory, such as bool and char using 1 byte, int and float for 4 byte, long and double for 8 byte, and string is depended on the length of it.
+### We can treat our grids of memory into chunks of arrays to store multiple variables back to back. This ensure that multiple variable would be referable by the same name.
+### In c, the syntax of creating a new array would be, (data type of variables in the array) (array name)[(amount of variables)], this way the computer would automatically sort out enough memory space specific to the amount and data type of variables. Such as if you type, int scores[3];, computer would sort out 12 byte of space for 3 integar values. 
+### To input a variable to an array type in, (array name)[posistion] = (value);.
+### String is actually just an array of characters, and each characters takes 1 byte of memory as a letter, but also holds an ACSII value. Therefore you can output the ACSII value of each character in a string by using printf and %i and referring the posistions of the characters in a string.
