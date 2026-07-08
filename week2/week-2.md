@@ -1,5 +1,6 @@
 # Week 2
 ## Use debug50 as a command tool in VS code to help debugging.
+## Use headerfile of ctype.h to help manipulate string in c.
 
 ## Cryptography
 ### Encrypting data in a reversible way for secured communication.
