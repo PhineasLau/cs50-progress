@@ -12,10 +12,10 @@
 ### To pair up items for different arrays based on their index, we can define a new type of data structure by the following,
 ### typedef struct
 ### {
-### (data type) (variable1);
-### (data type) (variable2);
+### (data type) (array1);
+### (data type) (array2);
 ### }
 ### (data struct name);
-
+### Then you can declare the array using that new data struct like this, (data struct) (array name)[(size)];, because data struct is a new data type that can be repeatedly used to store different information, so we don't refer to the data struct name when modifying the content of the array, but instead the arrays declared inside the data strcut and the outside array that is using it. By the dot notation of (array)[index].(array1).
 
 
