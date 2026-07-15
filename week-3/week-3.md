@@ -9,6 +9,13 @@
 #### Known as O(logn) and Ω(1), search the middle value, if target is greater than it then to repeat the process but only for the locations after it. Vice Versa. Much more effcient than linear seacrh, as doubling the amount of input only increase the steps needed by 1 instead of also doubling it. However it only works on data that have be sorted by order, as so all the values after the middle ones are greater than it. It also has Ω (1) as the first step of the splitting process found the target value.
 ## Sorting tools
 ### In c, you can't directly compare two strings as you would do to two integars, because strings are arrays of characters so it is more complex than to simply compare if the value of two locations same. Therefore we use the library strcmp((string1), (string2)), from headerfile string.h, if equal then to return 0, otherwise positive or negative number based on whether the ASCII code of the first mismatch character of first string is greater or less than the second string's.
+### To pair up items for different arrays based on their index, we can define a new type of data structure by the following,
+### typedef struct
+### {
+### (data type) (variable1);
+### (data type) (variable2);
+### }
+### (data struct name);
 
 
 
