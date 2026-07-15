@@ -17,5 +17,7 @@
 ### }
 ### (data struct name);
 ### Then you can declare the array using that new data struct like this, (data struct) (array name)[(size)];, because data struct is a new data type that can be repeatedly used to store different information, so we don't refer to the data struct name when modifying the content of the array, but instead the arrays declared inside the data strcut and the outside array that is using it. By the dot notation of (array)[index].(array1).
+### Selection sort
+#### Known as Θ(n^2), grow very fast with input and considered a slow algorithm. Works by comparing each index value to final index, if greater than that swap position, because it can't stop early as soon as array finished sort but runs the full process so maximum and minimum running is the same.
 
 
