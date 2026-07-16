@@ -1,0 +1,11 @@
+sort1 uses: Bubble sort
+
+How do you know?: 0.04 against random5000.txt and 0.011 against sorted5000.txt, so not selection, while 0.170 against random10000, and by doubling input you got 4 times the time needed means it must be bubblesort by O(n^2) when n becomes 2n.
+
+sort2 uses: Merge sort
+
+How do you know?: 0.015 against random5000, 0.011 against sorted5000, so not selection, 0.032 against random10000, grow slower than sort1 so must be merge sort as the fastest.
+
+sort3 uses: Selection sort
+
+How do you know?: 0.031 against random5000 and sorted5000
