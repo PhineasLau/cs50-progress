@@ -59,10 +59,10 @@
 ### Can we alter the reaction of if user typed string in get_int, of not just reask but custom reply?
 #### No, because get_int is a custom library made by cs50 for the designed projects.
 
-## Projects
-### 1. hello.c
-#### A simple program that takes input and reply with an the output of it using printf.
-### 2. mario.c
-#### A program that generates custom set ranges of height to generate blocks. Utilised for loop and check of input range, format.
-### 3. credit.c
-#### A program to check the type of cerdit cards it is and if it is in valid format, combined with Luhn Algorithm to spot human typing mistakes. Struggled with, and eventually learnt that the when referring to the index of a character in a string, unlike python, c treats them as a long chain of characters and represented with a numerical ASCII value instead, therefore need to use - '0' to correctly remap it to its character. As '0' actually will be treated as a number, that actually the same as the gap of ASCII codes for digit to its real value.
+### Projects
+#### 1. hello.c
+##### A simple program that takes input and reply with an the output of it using printf.
+#### 2. mario.c
+##### A program that generates custom set ranges of height to generate blocks. Utilised for loop and check of input range, format.
+#### 3. credit.c
+##### A program to check the type of cerdit cards it is and if it is in valid format, combined with Luhn Algorithm to spot human typing mistakes. Struggled with, and eventually learnt that the when referring to the index of a character in a string, unlike python, c treats them as a long chain of characters and represented with a numerical ASCII value instead, therefore need to use - '0' to correctly remap it to its character. As '0' actually will be treated as a number, that actually the same as the gap of ASCII codes for digit to its real value.
