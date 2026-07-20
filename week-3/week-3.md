@@ -25,3 +25,11 @@
 #### Known as O(n^2) and Ω(n), works by comparing each values to next and if greater than to swap place with it, this result in the opposite sorting direction compared to selection sort, as each values being pushed to right would be largest and no need of sorting again. Because we have room for implementing the action of early quit as soon as checked for every values to the value next to it once and no swap happens, instead of every values to every values after it, so it would have very low running time if the array is mostly sorted already otherwise very high running time as each loop and a value's final placement usually requires many more swapping steps and memory if it is more random although O(n^2) being the same.
 ### Merge sort
 #### Known as Θ(nlogn), much slower running time growing speed, means far more efficent and faster than both selection sort and bubble sort when facing large unsorted list. Works by a recursion of combining subarrays together by comparing one value from each of 2 subarrays, put the smaller value at left of array after splitting one to two smaller arrays until there all are in individuals.
+
+## Reflection
+### What types of cases to use one sorting algorithm over another?
+#### Use merge sort for large data set, use bubble sort for small set or mostly sorted set, use selection when low memory available.
+
+### Projeccts
+#### d
+##### d
