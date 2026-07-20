@@ -88,3 +88,41 @@
 #### - Worked with arrays, strings and ASCII manipulation
 #### - Learnt about stack memory and returning local variables
 #### - Debugged null terminator (`\0`) and buffer overflow errors
+
+# Week 3
+## Topics covered:
+### 1. Algorithm Analysis
+#### - Big O, Big Ω and Big Θ notation
+#### - Time and space complexity
+#### - Algorithm efficiency and trade-offs
+#### - Worst-case, best-case and average performance
+### 2. Recursion
+#### - Recursive functions and base cases
+#### - Breaking large problems into smaller subproblems
+#### - Recursion versus iteration
+#### - Stack memory and recursive function calls
+### 3. Searching Algorithms
+#### - Linear search
+#### - Binary search
+#### - Requirements and efficiency of different search algorithms
+### 4. Sorting Algorithms
+#### - Selection sort
+#### - Bubble sort
+#### - Merge sort
+#### - Comparing sorting algorithm performance
+### 5. Data Structures and String Comparison
+#### - Using `strcmp()` from `string.h`
+#### - Creating custom data types with `struct`
+#### - Using `typedef`
+#### - Dot notation for accessing structure members
+## Projects:
+### 1. Plurality
+#### - Implemented a plurality voting system
+#### - Applied selection sort to rank candidates by votes
+#### - Practised array indexing and loop boundaries
+#### - Debugged off-by-one and zero-indexing errors
+### 2. Tideman
+#### - Implemented the Tideman ranked-choice voting algorithm
+#### - Applied graph-based algorithm design
+#### - Worked with recursive logic and cycle detection
+#### - Strengthened problem-solving and debugging skills through a large-scale project
