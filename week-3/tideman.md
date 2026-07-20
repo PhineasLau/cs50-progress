@@ -46,5 +46,27 @@
 #### I learnt that complex algorithms become manageable after building the correct mental model. As to decided to use my initially unfamiliar recusion, by zooming out and redecomposite it as a smaller version of repeated same question.
 
 ## print_winner()
-###
+### Compared with lock_pairs(), this function became surprisingly simple.
+### The winner is simply the candidate with no incoming arrows. So I easily and quickly implement a nested for loops structure, which could took me some time before I reused this similar idea many times, to check for every candidates in candidates array, and for everyone else whether ever beating them, if not print as one of winner and repeat for all candidates.
+### I learnt that the easier a final function feels, the more likely the previous functions successfully built the correct data structure and mental model in my head.
+
+## Debugging Lessons
+### Throughout Tideman I repeatedly experienced an important debugging pattern:
+#### Build a mental model. Trace it out. Find a contradiction. Correct the model. Repeat.
+#### I learnt that debugging is mostly about correcting the inital understanding, then the logic then the syntax.
+
+## Summary
+### Tideman was the first programming assignment that genuinely challenged my fixed mindset of programming. It gave me some many headaches that made me questioned myself whether I am capable to pull this off, because even after watching the explaination video I don't have an clear idea of what is even happening and what should I do. Its overwhelming difficulty compared to anything I have done before shaked my confidence but ultimately helped me reconstruct my way of approaching a problem. 
+### The most difficulty part is to learn to think algorithmically. Although solving Tideman took significantly longer than I expected and even took some days I planned for week 4. But the process of slowly but completely learning each logics truly made this assiginment is far more valuable than previous ones.
+
+### Key Takeaways
+#### Break overwhelming problems into smaller functions to understand one at a time.
+#### Understand the data features and function logic before writing code.
+#### Good data structures naturally suggest algorithms.
+#### Avoid storing information that can be calculated out easily.
+#### Graph problems should be visualised out in reality before writing it out.
+#### Recursion should be used for indefinite looping logic that share simple response.
+#### Being stuck for hours is sometimes part of process of solving difficult problems.
+#### Correct initial understanding is more important than writing code out quickly first.
+
 
