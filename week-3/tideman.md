@@ -34,7 +34,17 @@
 
 ## lock_pairs()
 ### This is by far the hardest part of the problem. It completely changed my understanding of programming an algorithm.
-### At first I mistakenly checked for cycles inside the sorted pairs rather than the locked graph. And this prevented any meaningful progress.
-### After reusing the technique I learnt to zoom out again, to think about the overall design, I realised that the purpose of lock_pairs() is to decide what victories to be added to locked[][], so there is no point to check whether cycle happens in sorted pairs, but whether cycle happens in locked[][], as we are uilising the fact that any cycle needs one outgoing pair and one incoming pair, so using the fact that locked[][] is incompleted, to add the first part of the cycle pair in and to avoid adding the second to prevent a real full cycle from happening, as the order of stronger half cycle adding is by sorted pairs and that is why I made that mistake of referring to it everywhere.
+### Building the mental Model
+#### At first I mistakenly checked for cycles inside the sorted pairs rather than the locked graph. And this prevented any meaningful progress.
+#### After reusing the technique I learnt to zoom out again, to think about the overall design, I realised that the purpose of lock_pairs() is to decide what victories to be added to locked[][], so there is no point to check whether cycle happens in sorted pairs, but whether cycle happens in locked[][], as we are uilising the fact that any cycle needs one outgoing pair and one incoming pair, so using the fact that locked[][] is incompleted, to add the first part of the cycle pair in and to avoid adding the final pair for a cycle from closing in and becoming a full cycle, as the order of stronger incomplete cycle pairs adding is by sorted pairs and that is why I made that mistake of referring to sorted pair everywhere. Is point is that the question I should ask isn't 'can the loser reach the winner in a way' but 'does what I am adding right now create a cycle'.
+### Discovering recursion
+#### Initially I attempted using definite loops to follow the arrow to its final position of whether that loser will beat the winner. 
+#### Eventually I realised that graphs can branch unpredictably. And to follow each unfixed length of uncertain number of branches I need to use a recursion. 
+#### I have so designed my first what called recursive graph traversal independentally.
+#### I have separated the recusion part as detect_cycle(start,target) function, in locked pair if no loser beating back winner then add as one winner really winning over a loser.
+#### I first used the correct idea of kept changing the start value, as to move one step a time, if the arrow can still point to someone then repeat, until reaching an arrow that doesn't point to anyone which is an end of a branch, or ultimatally reaching the target position, the original winner, as so loser beats winner a cycle has been created.
+#### I learnt that complex algorithms become manageable after building the correct mental model. As to decided to use my initially unfamiliar recusion, by zooming out and redecomposite it as a smaller version of repeated same question.
 
+## print_winner()
+###
 
