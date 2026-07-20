@@ -43,3 +43,48 @@
 #### - Implemented Luhn Algorithm to validate credit card numbers
 #### - Applied character indexing and ASCII conversion in C
 #### - Practised algorithm design and debugging
+
+# Week 2
+## Topics covered:
+### 1. Debugging and Testing
+#### - Types of programming errors (syntax and logical errors)
+#### - Using `printf` for debugging
+#### - Using `debug50` and breakpoints in VS Code
+#### - Garbage values and uninitialised variables
+### 2. Compilation and Build Process
+#### - Using `clang` and `make`
+#### - Compiler command-line arguments (`-o`, `-lcs50`)
+#### - Four stages of compilation
+#### - Header files and linking libraries
+#### - Assembly language, binary code and machine code
+#### - Reverse engineering and code obfuscation
+### 3. Arrays and Strings
+#### - Memory allocation and data type sizes
+#### - Array declaration, indexing and initialisation
+#### - Strings as character arrays
+#### - ASCII representation of characters
+#### - Null terminator (`\0`) and string length
+#### - Character manipulation using `ctype.h`
+### 4. Command Line Arguments
+#### - Structure of the `main()` function
+#### - Using `argc` and `argv`
+#### - Accessing user input from the terminal
+#### - Program self-reference with `argv[0]`
+### 5. Cryptography
+#### - Encryption and decryption concepts
+#### - Substitution cipher fundamentals
+## Projects:
+### 1. Scrabble
+#### - Calculated word scores using letter values
+#### - Applied arrays and string indexing for text processing
+#### - Used functions from `ctype.h` for character conversion
+### 2. Readability
+#### - Implemented the Coleman–Liau Index
+#### - Used floating-point arithmetic for accurate calculations
+#### - Practised debugging with `debug50`
+### 3. Substitution
+#### - Implemented a substitution cipher using a user-provided key
+#### - Applied command-line arguments (`argc` and `argv`)
+#### - Worked with arrays, strings and ASCII manipulation
+#### - Learnt about stack memory and returning local variables
+#### - Debugged null terminator (`\0`) and buffer overflow errors
