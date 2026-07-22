@@ -18,6 +18,8 @@
 
 ## Memory allocation 
 ### When you declare two pointers being the same, for example two strings being the same, because pointers are address of memory, so when you declare them as same to each other, editing one pointer's pointing values also affect the other, such as declaring string 1 same as string 2, and the moment you edit string 1 it will also edits string 2 the same way.
-### To prevent this situation we can use mallco functions, by including headerfile <stdlib.h>
+### To prevent this situation we can use mallco function, by including headerfile called standard library stdlib.h. The mallco() function works by declaring the amount of bytes of memory inside the () for the values pointing by pointers. For example char* t = malloc(strlen(s)+1);, this means for pointer t, request a unique starting address, but with equal amount of spaces as string s, we add +1 for the \0. Afterward we can use a for loop to copy every characters in s to t like for an array, because t already gots it own starting address so any further editing to t won't affect s as they pointing to different address although values being same, we can also simplify this by using strcpy((string1),(string2)).
+ 
+
 
 
