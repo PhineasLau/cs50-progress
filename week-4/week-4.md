@@ -1,4 +1,6 @@
 # Week 4
+## Add headerfile stdlib.h liberies for access malloc function.
+
 ## Hexadecimal
 ### Known as base 16, using A to F to represent number above 9, so A = 10 and F = 15, giving 16 different digits including 0s to give 16^2, 256 different values by different patterns. The way it counts is by placing two digits as one unit, the first is the 16's place, the second is the 1's place, so to translate it to decimal, times the first digit by 16 and add the second. Such as 01 = 0+1, 10 = 16+1, 20 = 16*2 + 0, 1A = 16+10, FF = 16*15 +15 etc. This was invented as a more convenient way to represent values as now 1 digit in base 16 can represent 4 bits, such as 1111 = 15 = F, and so 2 digits in base 16 can represent all the possible different values of a byte. 
 ### In memory locations for example, to avoid problems of mistaking one value as another due to not knowing what base system you are working on, such as 10 can mean 16 in base 16 but it could also mean ten, we add 0x in front of hexadecimal numbers, such as 0x1 and 0x10.
@@ -14,5 +16,8 @@
 #### If we use %c instead then it will only print out the first character H. We can then add *(string+1) to print out the next character, as string is an address, and * means go to address to get the value. Normally we shouldn't use *string to print full sequences of characters as this means to go to that one address and only get a single character. The %s and without * before string to automatically print all characters before \0 is a special function to printf.
 #### The reason why you can compare integar type variables but not string variables would be because there is a variable for integar, a variable for an character but not for a string, so when you compare two strings, you are comparing two pointers, and pointers are numbers as address to the first character, so therefore two address will always be different, and what we actually wanted is to compare the value by the address one by one.
 
+## Memory allocation 
+### When you declare two pointers being the same, for example two strings being the same, because pointers are address of memory, so when you declare them as same to each other, editing one pointer's pointing values also affect the other, such as declaring string 1 same as string 2, and the moment you edit string 1 it will also edits string 2 the same way.
+### To prevent this situation we can use mallco functions, by including headerfile <stdlib.h>
 
 
