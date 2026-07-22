@@ -1,3 +1,7 @@
 # Week 4
 ## Hexadecimal
 ### Known as base 16, using A to F to represent number above 9, so A = 10 and F = 15, giving 16 different digits including 0s to give 16^2, 256 different values by different patterns. The way it counts is by placing two digits as one unit, the first is the 16's place, the second is the 1's place, so to translate it to decimal, times the first digit by 16 and add the second. Such as 01 = 0+1, 10 = 16+1, 20 = 16*2 + 0, 1A = 16+10, FF = 16*15 +15 etc. This was invented as a more convenient way to represent values as now 1 digit in base 16 can represent 4 bits, such as 1111 = 15 = F, and so 2 digits in base 16 can represent all the possible different values of a byte. 
+### In memory locations for example, to avoid problems of mistaking one value as another due to not knowing what base system you are working on, such as 10 can mean 16 in base 16 but it could also mean ten, we add 0x in front of hexadecimal numbers, such as 0x1 and 0x10.
+
+## Memory
+### To get the memory address of a variable of where it has been stored in computer, use &(variable), and as they contain letters for base 16, they are as the data type of pointers, or p in short, so you can display the location of a variable in memory by printf("%p\n",&(variable)). This should return a long combination of letters and number, which the actual numberical address without the use of base 16 would be much larger in length.
