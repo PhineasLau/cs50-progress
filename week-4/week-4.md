@@ -10,7 +10,7 @@
 #### You can also dereference a pointer by reusing *, for example we can printf("%i\n",*p);, which will display the not the address, but the value inside that pointer/address.
 
 ## Strings
-### Strings are in fact just pointers to characters, so string (variable); is equivalent to char* (variable);, to create a pointer named (variable) that points to characters, while when you assign the pointer to a sequence of characters it stores the address of the first character, as no need to store every of them as all strings should end with null, \0. For example char* string = "Hi";, then string will be the pointer to H, and when you printf("%s\n", string);, it will display the full "Hi" by looping until \0. 
+### Strings are in fact just pointers to characters, so string (variable); is equivalent to char* (variable);, to create a pointer named (variable) that points to characters, while when you assign the pointer to a sequence of characters it stores the address of the first character, as no need to store every of them as all strings should end with null, \0. For example char* string = "Hi";, then string will be the pointer, storing the address to H, and when you printf("%s\n", string);, it will display the full "Hi" by looping until \0. You don't need to add & beforehand in this case because it means to get the address of the variable. And variable for a string itself is a pointer.
 #### If we use %c instead then it will only print out the first character H. 
 #### If you do %p and &string then instead it will print out the address of the pointer, which is the address of the first character H. 
 
