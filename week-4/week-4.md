@@ -11,7 +11,7 @@
 
 ## Strings
 ### Strings are in fact just pointers to characters, so string (variable); is equivalent to char* (variable);, to create a pointer named (variable) that points to characters, while when you assign the pointer to a sequence of characters it stores the address of the first character, as no need to store every of them as all strings should end with null, \0. For example char* string = "Hi";, then string will be the pointer, storing the address to H, and when you printf("%s\n", string);, it will display the full "Hi" by looping until \0. 
-#### If we use %c instead then it will only print out the first character H. We can then add *(string+1) to print out the next character, as s is an address, and * means go to address to get the value. Normally we shouldn't use *string to print full sequences of characters as this means to go to that one address and only get a single character. The %s and without * before string to automatically print all characters before \0 is a special function to printf.
+#### If we use %c instead then it will only print out the first character H. We can then add *(string+1) to print out the next character, as string is an address, and * means go to address to get the value. Normally we shouldn't use *string to print full sequences of characters as this means to go to that one address and only get a single character. The %s and without * before string to automatically print all characters before \0 is a special function to printf.
 
 
 
