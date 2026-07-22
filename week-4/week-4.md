@@ -1,1 +1,3 @@
- 
+# Week 4
+## Hexadecimal
+### Known as base 16, using A to F to represent number above 9, so A = 10 and F = 15, giving 16 different digits including 0s to give 16^2, 256 different values by different patterns. The way it counts is by placing two digits as one unit, the first is the 16's place, the second is the 1's place, so to translate it to decimal, times the first digit by 16 and add the second. Such as 01 = 0+1, 10 = 16+1, 20 = 16*2 + 0, 1A = 16+10, FF = 16*15 +15 etc. This was invented as a more convenient way to represent values as now 1 digit in base 16 can represent 4 bits, such as 1111 = 15 = F, and so 2 digits in base 16 can represent all the possible different values of a byte. 
