@@ -4,4 +4,14 @@
 ### In memory locations for example, to avoid problems of mistaking one value as another due to not knowing what base system you are working on, such as 10 can mean 16 in base 16 but it could also mean ten, we add 0x in front of hexadecimal numbers, such as 0x1 and 0x10.
 
 ## Memory
-### To get the memory address of a variable of where it has been stored in computer, use &(variable), and as they contain letters for base 16, they are as the data type of pointers, or p in short, so you can display the location of a variable in memory by printf("%p\n",&(variable)). This should return a long combination of letters and number, which the actual numberical address without the use of base 16 would be much larger in length.
+### To get the memory address of a variable of where it has been stored in computer, use &(variable), and as they contain letters for base 16, they are as the data type of pointers, or p/* in short, so you can display the location of a variable in memory by printf("%p\n",&(variable));. This should return a long combination of letters and number, which the actual numberical address without the use of base 16 would be much larger in length.
+### Pointers
+#### To declare a pointer, you need two data types, one to show it is a pointer, and another to show what data type is it pointing to. For example to declare a pointer which to store the address of a integar variable, we use int* (variable1) = &(variable2), int means it is storing the pointer of an integar variable, * means it is a pointer, variable1 is the pointer name, & gets the address of variable2. So then later you can simply refer to the pointer name without the name of adding the * nor & before the pointer/variable names.
+#### You can also dereference a pointer by reusing *, for example we can printf("%i\n",*p);, which will display the not the address, but the value inside that pointer/address.
+
+## Strings
+### Strings are in fact just pointers to characters, so string (variable); is equivalent to char* (variable);, to create a pointer named (variable) that points to characters, while when you assign the pointer to a sequence of characters it stores the address of the first character, as no need to store every of them as all strings should end with null, \0. For example char* string = "Hi";, then string will be the pointer to H, and when you printf("%s\n", string);, it will display the full "Hi" by looping until \0. 
+#### If we use %c instead then it will only print out the first character H. 
+#### If you do %p and &string then instead it will print out the address of the pointer, which is the address of the first character H. 
+
+
