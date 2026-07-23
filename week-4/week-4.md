@@ -34,6 +34,9 @@
 ## scanf
 ### To replace get_string, get_ int etc that are only available inside cs50's library, we can use the scanf, it is a library in default c, that is to detect user input to place it at address. Works by scanf("%(datatype)", (address)), this reads the user input as (datatype) and place it in address, to get an address we can declare an empty variable then to use & before it to turn it to its address, we can also create a pointer or an array for strings because a variable for a full string doesn't exist so we can't use it, and as pointers are address so you don't add & before a pointer but just the pointer name. It works similar to printf, that if you use %s, and a pointer or an array, then it will automatically runs through each characters user typed, adds a null at the end and put them from the given address then onward one by one. But still, when we declare a pointer for the string we should use malloc to get a safe piece of memory, although it will limit how many characters user can type in. Same logic with array, and no need to add & before it to turn it to address, scanf and printf will automatically take the address of first value in array as if they treating array as a pointer.
 
+## File I/O
+
+
 ## Reflection
 ### Can we just use array of characters to replace the need of pointers to string? They works the same by asking for a piece of memory then assign values to it.
 #### Yes for most cases, the main differences of them would be that pointer is an address, that we can reassign it to another value(s), whereas arrays you can't point to another value(s). The size of arrays is fixed, you can't expand or reduce the amount space of it. But you can resize pointer using malloc. 
