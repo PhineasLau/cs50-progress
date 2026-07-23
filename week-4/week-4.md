@@ -31,6 +31,8 @@
 ### Valgrind
 #### A program to check memory related errors. Run this by typing in terminal valgrind ./(programname). It can show you where memory leaks happens, what line touches illegal memory spaces etc.
 
+## scanf
+### To replace get_string, get_ int etc that are only available inside cs50's library, we can use the scanf, it is a library in default c, that is to detect user input to place it at address. Works by scanf("%(datatype)", (address)), this reads the user input as (datatype) and place it in address, to get an address we can declare an empty variable then to use & before it to turn it to its address.
 
 ## Reflection
 ### Can we just use array of characters to replace the need of pointers to string? They works the same by asking for a piece of memory then assign values to it.
