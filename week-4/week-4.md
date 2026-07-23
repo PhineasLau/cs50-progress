@@ -1,5 +1,5 @@
 # Week 4
-## Add headerfile stdlib.h liberies for access malloc function.
+## Add headerfile stdlib.h liberies for access malloc and strcpy functions.
 
 ## Hexadecimal
 ### Known as base 16, using A to F to represent number above 9, so A = 10 and F = 15, giving 16 different digits including 0s to give 16^2, 256 different values by different patterns. The way it counts is by placing two digits as one unit, the first is the 16's place, the second is the 1's place, so to translate it to decimal, times the first digit by 16 and add the second. Such as 01 = 0+1, 10 = 16+1, 20 = 16*2 + 0, 1A = 16+10, FF = 16*15 +15 etc. This was invented as a more convenient way to represent values as now 1 digit in base 16 can represent 4 bits, such as 1111 = 15 = F, and so 2 digits in base 16 can represent all the possible different values of a byte. 
@@ -8,7 +8,7 @@
 ## Memory
 ### To get the memory address of a variable of where it has been stored in computer, use &(variable), and as they contain letters for base 16, they are as the data type of pointers, or p/* in short, so you can display the location of a variable in memory by printf("%p\n",&(variable));. This should return a long combination of letters and number, which the actual numberical address without the use of base 16 would be much larger in length.
 ### Pointers
-#### To declare a pointer, you need two data types, one to show it is a pointer, and another to show what data type is it pointing to. For example to declare a pointer which to store the address of a integar variable, we use int* (variable1) = &(variable2), int means it is storing the pointer of an integar variable, * means it is a pointer, variable1 is the pointer name, & gets the address of variable2. So then later you can simply refer to the pointer name without the name of adding the * nor & before the pointer/variable names.
+#### To declare a pointer, you need two data types, one to show it is a pointer, and another to show what data type is it pointing to. For example to declare a pointer which to store the address of a variable that stores an integar, we use int* (pointer) = &(variable), int means it is storing the pointer of an integar variable, * means it is a pointer, with then the pointer name, & gets the address of variable. So then later you can simply refer to the pointer name without the name of adding the * nor & before the pointer/variable names.
 #### You can also dereference a pointer by reusing *, for example we can printf("%i\n",*p);, which will display the not the address, but the value inside that pointer/address.
 
 ## Strings
@@ -18,12 +18,15 @@
 
 ## Memory allocation 
 ### When you declare two pointers being the same, for example two strings being the same, because pointers are address of memory, so when you declare them as same to each other, editing one pointer's pointing values also affect the other, such as declaring string 1 same as string 2, and the moment you edit string 1 it will also edits string 2 the same way.
-### To prevent this situation we can use mallco function, by including headerfile called standard library stdlib.h. The mallco() function works by declaring the amount of bytes of memory inside the () for the values pointing by pointers. For example char* t = malloc(strlen(s)+1);, this means for pointer t, request a unique starting address, but with equal amount of spaces as string s, we add +1 for the \0. Afterward we can use a for loop to copy every characters in s to t like for an array, because t already gots it own starting address so any further editing to t won't affect s as they pointing to different address although values being same, we can also simplify this by using strcpy((string1),(string2)).
+### To prevent this situation we can use mallco function, by including headerfile called standard library stdlib.h. The mallco() function works by declaring the amount of bytes of memory inside the () for the values pointing by pointers. For example char* t = malloc(strlen(s)+1);, this means for pointer t, request a unique starting address, but with equal amount of byte spaces as string s, we add +1 for the \0. Afterward we can use a for loop to copy every characters in s to t like for an array, because t already gots it own starting address so any further editing to t won't affect s as they pointing to different address although values being same, we can also simplify this by using strcpy((string1),(string2)).
+### You can use sizeof((datatype)) to give you the amount of bytes a single unit of a data type takes, such as int *x = malloc(3 * sizeof(int));, which gives you 12 bytes of spaces for pointer x, to store 3 integars.
+### Although when you refer to pointer it only stores one address for one value, but if you treat it like arrays and use pointer[i] then you can modify it.
 ### Errors in memory
 #### Sometimes there may be situations that the computer returns null or known as \0, one case is if user enters an empty string, then the first character in that string, or the address that pointer pointing to would be null, which should never be modifyed, another case is if user typed in a very long paragraph that get_string simply cannot handle then it will returns NULL, in all capitals, as well, therefore we need to detect and catches them to so react to them avoid touching them.
-#### After using malloc, of requesting computer for a specific chunk of memory for a pointer, after using them we also need to free the memory as well otherwise computers continue running on the program will keep getting slower as they think they don't have enough memory, known as a memory leak. To free the memory for a pointer you use free((pointer)). You only need to free the memory if you manually used malloc, because get_string will automatically do this for you.
+#### After using malloc, of requesting computer for a specific amount byte of memory for a pointer, after using them we also need to free the memory as well otherwise computers continue running on the program will keep getting slower as they think they don't have enough memory, known as a memory leak. To free the memory for a pointer you use free((pointer)). You only need to free the memory if you manually used malloc, because get_string will automatically do this for you.
+
 ### Valgrind
-#### A program to check memory related errors.
+#### A program to check memory related errors. 
 
 
 ## Reflection
