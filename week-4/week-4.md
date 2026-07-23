@@ -19,6 +19,9 @@
 ## Memory allocation 
 ### When you declare two pointers being the same, for example two strings being the same, because pointers are address of memory, so when you declare them as same to each other, editing one pointer's pointing values also affect the other, such as declaring string 1 same as string 2, and the moment you edit string 1 it will also edits string 2 the same way.
 ### To prevent this situation we can use mallco function, by including headerfile called standard library stdlib.h. The mallco() function works by declaring the amount of bytes of memory inside the () for the values pointing by pointers. For example char* t = malloc(strlen(s)+1);, this means for pointer t, request a unique starting address, but with equal amount of spaces as string s, we add +1 for the \0. Afterward we can use a for loop to copy every characters in s to t like for an array, because t already gots it own starting address so any further editing to t won't affect s as they pointing to different address although values being same, we can also simplify this by using strcpy((string1),(string2)).
+### Errors in memory
+#### Sometimes there may be situations that the computer returns null or known as \0, one case is if user enters an empty string, then the first character in that string, or the address that pointer pointing to would be null, which should never be modifyed, another case is if user typed in a very long paragraph that get_string simply cannot handle then it will returns NULL, in all capitals, as well, therefore we need to detect and catches them to so react to them avoid touching them.
+#### After using malloc, of requesting computer for a specific chunk of memory for a pointer, after using them we also need to free the memory as well otherwise computers continue running on the program will keep getting slower as they think they don't have enough memory. To free the memory for a pointer you use free((pointer))
  
 
 
