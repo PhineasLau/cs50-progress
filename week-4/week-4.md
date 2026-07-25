@@ -57,3 +57,8 @@
 
 ### Can you use fwrite to replace fread by swapping first and second pointer because they basically do the same job, take from one address, paste to another? 
 #### No, because first address must be in memory buffer, in RAM, whereas the second one must be an outer address, secondary storage where files lives, as data that persist as not violatile.
+
+### Projects
+#### 1.volume.c
+##### A program that takes in the original .wav file name and output a new .wav file after making it louder by a given factor. It looks more complex than the actual difficulty, though it still enchanced my understanding of copying files, because there is a fixed known length and size for each of headerfile units so I can just use fread and fwrite in one go, to paste the chunk of memory for header in orginal to new file, however because there are unknown amount of samples amount afterward, so I used a while loop as it is indefinite, just like in the lecture example to check whether it has reached the end, if not then paste that in a buffer memory address, then paste that buffer memory address content to new file, the reason why we need a buffer is because fwrite can't access two file at the same time, one should be a pointer in local, one file in secondary storage.
+
