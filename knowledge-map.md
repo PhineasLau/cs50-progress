@@ -126,3 +126,65 @@
 #### - Applied graph-based algorithm design
 #### - Worked with recursive logic and cycle detection
 #### - Strengthened problem-solving and debugging skills through a large-scale project
+
+# Week 4
+
+## Topics covered:
+### 1. Memory and Pointers
+#### - Hexadecimal representation and memory addresses
+#### - Using pointers to store and access memory addresses
+#### - Address operator (`&`) and dereferencing (`*`)
+#### - Stack memory and function memory frames
+#### - Passing variables by value versus passing by reference
+#### - Modifying original values through pointers
+### 2. Dynamic Memory Allocation
+#### - Using `malloc()` and `free()`
+#### - Heap memory and persistent memory allocation
+#### - Copying data between independent memory locations
+#### - Using `sizeof()` for memory size calculation
+#### - Memory leaks and freeing allocated memory
+#### - Null pointers and invalid memory access
+#### - Stack overflow and out-of-memory errors
+#### - Using Valgrind to detect memory errors
+### 3. Strings and Memory Management
+#### - Strings as pointers to characters
+#### - Relationship between `string` and `char *`
+#### - String comparison using memory addresses versus actual values
+#### - Copying strings using `strcpy()`
+#### - Read-only strings and pointer limitations
+#### - Character access through pointer arithmetic
+### 4. User Input and Standard Libraries
+#### - Using `stdlib.h` for memory functions
+#### - Using `scanf()` for user input
+#### - Reading different data types using format specifiers
+#### - Handling input through pointers and arrays
+### 5. File Input and Output
+#### - Opening and closing files with `fopen()` and `fclose()`
+#### - File pointers and `FILE` data type
+#### - Reading and writing text files
+#### - Using `fprintf()` and `fscanf()`
+#### - Binary file operations with `fread()` and `fwrite()`
+#### - File modes (`r`, `w`, `a`, `rb`, `wb`)
+#### - Copying files through binary data manipulation
+### 6. Image Processing and Data Structures
+#### - Bitmap (`.bmp`) image representation
+#### - Pixels and RGB colour values
+#### - Manipulating image data through memory
+#### - Applying filters through pixel calculations
+#### - Using structures to represent complex data
+## Projects:
+### 1. Volume
+#### - Modified `.wav` audio files by manipulating binary data
+#### - Used `fread()` and `fwrite()` to copy and edit file contents
+#### - Applied buffer memory to transfer data between files
+### 2. Filter
+#### - Implemented image filters using pixel manipulation
+#### - Applied grayscale, reflection, blur and edge detection algorithms
+#### - Used nested loops and boundary checking for image processing
+#### - Practised working with structures and RGB values
+#### - Improved algorithm design and optimisation through debugging
+### 3. Recover
+#### - Recovered deleted JPEG images from raw memory card data
+#### - Used binary file reading and writing
+#### - Applied memory block analysis using 512-byte chunks
+#### - Practised debugging complex program logic with memory tools
