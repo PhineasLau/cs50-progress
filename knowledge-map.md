@@ -188,3 +188,61 @@
 #### - Used binary file reading and writing
 #### - Applied memory block analysis using 512-byte chunks
 #### - Practised debugging complex program logic with memory tools
+
+# Week 5
+
+## Topics covered:
+### 1. Data Structures
+#### - Queues and FIFO (First In, First Out)
+#### - Stacks and LIFO (Last In, First Out)
+#### - Fixed-size versus dynamically allocated data structures
+#### - Dictionaries and key-value pairs
+### 2. Dynamic Memory and Reallocation
+#### - Resizing dynamically allocated memory
+#### - Using `realloc()`
+#### - Handling failed memory allocation
+#### - Preventing memory leaks during reallocation
+### 3. Linked Lists
+#### - Nodes and dynamically allocated memory
+#### - Linking nodes using pointers
+#### - Traversing linked lists
+#### - Appending and ordered insertion
+#### - Using the `->` operator
+#### - Freeing dynamically allocated linked lists
+#### - Memory and performance trade-offs
+### 4. Binary Search Trees
+#### - Tree and node structures
+#### - Left and right child pointers
+#### - Recursive tree traversal and searching
+#### - Binary search tree efficiency
+#### - Tree degeneration and worst-case performance
+### 5. Hash Tables and Hashing
+#### - Hash functions and hash tables
+#### - Mapping keys to buckets
+#### - Hash collisions
+#### - Collision resolution using linked lists
+#### - Balancing memory usage and search performance
+#### - Achieving constant-time average lookup with hashing
+### 6. Tries
+#### - Tree-based string storage
+#### - Character-based branching
+#### - Constant-time lookup
+#### - Memory usage and efficiency trade-offs
+### 7. Pointers and Data Structures
+#### - Pointers to structures
+#### - Structures containing multiple fields and pointers
+#### - Memory layout and offsets
+#### - Using pointers to traverse complex data structures
+## Projects:
+### 1. Inheritance
+#### - Simulated genetic inheritance using a family tree
+#### - Applied pointers and recursive traversal
+#### - Practised dynamic memory management
+### 2. Speller
+#### - Built a spell checker using a hash table and linked lists
+#### - Designed a custom hash function
+#### - Applied dynamic memory allocation and linked-list traversal
+#### - Used `strcmp()` and `strcasecmp()` for string comparison
+#### - Optimised hash table insertion and lookup performance
+#### - Practised memory management and safe deallocation
+#### - Balanced memory usage against algorithmic performance
