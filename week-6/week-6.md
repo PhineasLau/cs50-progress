@@ -14,3 +14,4 @@
 
 ## Reflection
 ### Why exactly is python a slower lanuage if all programming lanuages ultimate will be translated to one?
+#### Because python is an interpreter lanuage, so that it is not limited by a specific hardware to load, and can skip the time for checking the entire file again and to create a .exe of it, while this causes the requirement of letting computer to translate command line by line and actively move forward rather than done everything at once. Which this problem is called runtime overhead.
